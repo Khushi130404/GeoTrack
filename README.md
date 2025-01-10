@@ -47,3 +47,17 @@ GeoTrack is an Android app built in Android Studio using Java that detects the u
 - androidx.test.ext:junit:1.1.5
 - androidx.test.espresso:espresso-core:3.5.1
 
+## 🚀 Getting Started
+
+- Prerequisites
+- Android Studio
+- Java Development Kit (JDK)
+- A physical or virtual Android device with location services enabled.
+
+## Installation Steps
+
+1. Clone the repository to your local machine.
+2. Open the project in Android Studio.
+3. Sync the project to download all required dependencies.
+4. Build and run the app on your connected Android device or emulator.
+
