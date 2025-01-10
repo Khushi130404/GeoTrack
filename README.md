@@ -21,20 +21,29 @@ GeoTrack is an Android app built in Android Studio using Java that detects the u
 
 ## 🛠️ Technical Details
 
-1. Location Detection Logic
+### 1. Location Detection Logic
 
 - The app uses the LocationManager class to get location updates:
 - man.requestLocationUpdates(LocationManager.GPS_PROVIDER, 6000, 10, this);
 - This ensures that location updates are requested every 6000 milliseconds (6 seconds) with a minimum distance change of 10 meters.
 
-2. The app also checks if both GPS and Network Providers are enabled:
+### 2. The app also checks if both GPS and Network Providers are enabled:
 
 - man = (LocationManager) getSystemService(LOCATION_SERVICE);
 - isNet = man.isProviderEnabled(LocationManager.NETWORK_PROVIDER);
 - isGPS = man.isProviderEnabled(LocationManager.GPS_PROVIDER);
 
-3. Database Integration
+### 3. Database Integration
 
 - The app stores the detected location details in a local database along with the current date. 
 - This helps users keep track of their location history.
+
+## 🧩 Dependencies
+
+- androidx.appcompat:appcompat:1.6.1
+- com.google.android.material:material:1.11.0
+- androidx.constraintlayout:constraintlayout:2.1.4
+- junit:junit:4.13.2
+- androidx.test.ext:junit:1.1.5
+- androidx.test.espresso:espresso-core:3.5.1
 
